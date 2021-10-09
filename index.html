@@ -28,13 +28,15 @@
 
         <ul class="user-nav__list">
           <li class="user-nav__item">
-            <a href="">Корзина</a>
+            <a class="user-nav__link" href="">Корзина</a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main class="page-main">
       <h1 class="page-main__header">Дизайн-студия зи Краснодара</h1>
+
       <section class="intro">
         <h2 class="intro__header">Слайдер</h2>
         <div class="intro__wrapper slider">
@@ -49,36 +51,196 @@
                 <img class="intro__img" src="" alt="">
               </figure>
             </div>
+            <div class="intro__item slider__item">
+              <div class="intro__item-wrapper">
+                <p class="intro__title">Любим математику как никто другой</p>
+                <p class="intro__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="intro__link button" href="">Узнать больше</a>
+              </div>
+              <figure class="intro__image">
+                <img class="intro__img" src="" alt="">
+              </figure>
+            </div>
+            <div class="intro__item slider__item">
+              <div class="intro__item-wrapper">
+                <p class="intro__title">Только ночь, только хардкор.</p>
+                <p class="intro__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <a class="intro__link button" href="">Узнать больше</a>
+              </div>
+              <figure class="intro__image">
+                <img class="intro__img" src="" alt="">
+              </figure>
+            </div>
           </div>
           <div class="intro__toggles slider__toggles">
-
+            <button class="intro__toggle slider__toggle" type="button">
+              <span class="">Первый слайд</span>
+            </button>
+            <button class="intro__toggle slider__toggle" type="button">
+              <span class="">Второй слайд</span>
+            </button>
+            <button class="intro__toggle slider__toggle" type="button">
+              <span class="">Третий слайд</span>
+            </button>
           </div>
         </div>
       </section>
 
-      <section>
-        <h2></h2>
-        <ul>
-          <li>
-            <h3></h3>
-            <p></p>
-            <a href=""></a>
+      <section class="services">
+        <h2 class="services__header">Блок с услугами</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <h3 class="services__title">Веб-сайты</h3>
+            <p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="services__link" href="">Заказать</a>
           </li>
-          <li>
-            <h3></h3>
-            <p></p>
-            <a href=""></a>
+          <li class="services__item">
+            <h3 class="services__title">Приложения</h3>
+            <p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="services__link" href="">Заказать</a>
           </li>
-          <li>
-            <h3></h3>
-            <p></p>
-            <a href=""></a>
+          <li class="services__item">
+            <h3 class="services__title">Презентации</h3>
+            <p class="services__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="services__link" href="">Заказать</a>
           </li>
         </ul>
       </section>
-    </main>
-    <footer class="page-footer">
 
+      <section class="about">
+        <h2 class="about__header">Блок о нас</h2>
+        <p class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="about__text"><b>Выполняем заказы на разработку:</b></p>
+        <ul class="about__list">
+          <li class="about__item">
+            <p class="about__item-text">Веб-сайтов любой сложности</p>
+          </li>
+          <li class="about__item">
+            <p class="about__item-text">Мобильных приложений для iOS и Android</p>
+          </li>
+          <li class="about__item">
+            <p class="about__item-text">Слайдшоу и видео для корпоративных презентаций</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="advantages">
+        <h2 class="advantages__header">Блок с преимуществами</h2>
+        <figure class="advantages__images">
+          <img class="advantages__img" src="" alt="">
+        </figure>
+        <table class="advantages__table">
+          <caption><b>с 2004 года Любим точность во всем:</b></caption>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>146%</td>
+          </tr>
+          <tr>
+            <td>Соблюдение сроков</td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>Минимальная предоплата</td>
+            <td>50%</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="customers">
+        <h2 class="customers__header">Блок с клиентами</h2>
+        <ul class="customers__list">
+          <li class="customers__item">
+            <svg class="customers__img" role="img" focusable="false" width="199" height="57">
+              <use xlink:href="">
+            </svg>
+          </li>
+          <li class="customers__item">
+            <svg class="customers__img" role="img" focusable="false" width="209" height="90">
+              <use xlink:href="">
+            </svg>
+          </li class="customers__item">
+          <li>
+            <svg class="customers__img" role="img" focusable="false" width="185" height="52">
+              <use xlink:href="">
+            </svg>
+          </li>
+          <li class="customers__item">
+            <svg class="customers__img" role="img" focusable="false" width="173" height="84">
+              <use xlink:href="">
+            </svg>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__header">Мы ждем вас</h2>
+        <div class="contacts__wrapper">
+          <h3 class="contacts__title">Nёrds design studio</h3>
+          <p class="contacts__addres">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <p class="contacts__tel">+7 800 555-86-28</p>
+          <a class="contacts__link" href="">Напишите нам</a>
+        </div>
+        <figure class="contacts__list maps">
+          <img class="maps__img-map" src="" alt="">
+          <iframe class="maps__activ-map" style="display: none;" src="" ></iframe>
+        </figure>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="" class="social__link">
+              <svg role="img" focusable="false" width="26" height="15">
+                <use xlink:href="">
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <svg role="img" focusable="false" width="12" height="22">
+                <use xlink:href="">
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <svg role="img" focusable="false" width="21" height="21">
+                <use xlink:href="">
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__text-wrapper">
+        <p class="footer__slogon">Давайте дружить, это выгодно!</p>
+        <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
+
+    <section class="modal-feedback">
+      <h2 class="modal-feedbac__header">Напишите нам       </h2>
+      <form class="modal-feedbac__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-feedback__wrapper">
+          <label for="user-name-id">Ваше имя:</label>
+          <input id="user-name-id" type="text" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal-feedback__wrapper">
+          <label for="user-email-id">Ваш email:</label>
+          <input id="user-email-id" type="email" name="user-email" placeholder="email@example.com ">
+        </p>
+        <p class="modal-feedback__wrapper">
+          <label for="free-form-id">Текст письма:</label>
+          <textarea id="free-form-id" name="free-form" cols="30" rows="10">В свободной форме</textarea>
+        </p>
+        <button class="modal-feedbac__button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-feedbac__close" type="button">
+        <span>закрыть</span>
+      </button>
+    </section>
   </body>
 </html>
