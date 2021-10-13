@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нердс Дизайн студия</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo-link">
+        <img class="page-header__ligo-img" src="https://via.placeholder.com/159x65" width="159" height="65" alt="">
+      </a>
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Студия</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="blank.html">Клиенты</a>
+          </li>
+          <li class="main-nav__item">
+            <a>Магазин</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="blank.html">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="user-nav__list">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="blank.html">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="catalog-main">
+      <h1 class="catalog-main__header">Магазин готовых шаблонов</h1>
+
+      <section class="catalog-filter">
+        <h2 class="catalog-filter__header">Фильтр каталога</h2>
+        <form class="catalog-filter__form filter-form" name="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-form__price filter-price">
+            <legend class="filter-price__title">Стоимость:</legend>
+            <div class="filter-price__range-wrapper">
+              <div class="filter-price__ranger"></div>
+              <span class="filter-price__control filter-price__control--left"></span>
+              <span class="filter-price__control filter-price__control--right"></span>
+            </div>
+            <div class="filter-price__number-wrapper">
+              <p class="filter-price__number">
+                <label for="number-before-id">От</label>
+                <input id="number-before-id" type="number" name="number-before" value="0" readonly>
+              </p>
+              <p class="filter-price__number">
+                <label for="number-after-id">До</label>
+                <input id="number-after-id" type="number" name="number-after" value="150000" readonly>
+              </p>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <section class="catalog">
+        <h2 class="catalog__header">Каталог товаров</h2>
+
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="contacts">
+        <h2 class="contacts__header">Мы ждем вас</h2>
+        <div class="contacts__wrapper">
+          <h3 class="contacts__title">Nёrds design studio</h3>
+          <p class="contacts__addres">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <a class="contacts__tel" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="contacts__link" href="blank.html">Напишите нам</a>
+        </div>
+        <figure class="contacts__list maps">
+          <img class="maps__img-map" src="https://via.placeholder.com/1440x416" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
+          <iframe class="maps__activ-map" style="display: none;"></iframe>
+        </figure>
+      </section>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="blank.html" class="social__link">
+              <svg role="img" focusable="false" width="26" height="15">
+                <!-- <use xlink:href=""> -->
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="blank.html" class="social__link">
+              <svg role="img" focusable="false" width="12" height="22">
+                <!-- <use xlink:href=""> -->
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="blank.html" class="social__link">
+              <svg role="img" focusable="false" width="21" height="21">
+                <!-- <use xlink:href=""> -->
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__text-wrapper">
+        <p class="footer__slogon">Давайте дружить, это выгодно!</p>
+        <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+
+    <section class="modal-feedback">
+      <h2 class="modal-feedbac__header">Напишите нам</h2>
+      <form class="modal-feedbac__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-feedback__wrapper">
+          <label for="user-name-id">Ваше имя:</label>
+          <input id="user-name-id" type="text" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal-feedback__wrapper">
+          <label for="user-email-id">Ваш email:</label>
+          <input id="user-email-id" type="email" name="user-email" placeholder="email@example.com ">
+        </p>
+        <p class="modal-feedback__wrapper">
+          <label for="free-form-id">Текст письма:</label>
+          <textarea id="free-form-id" name="free-form" cols="30" rows="10">В свободной форме</textarea>
+        </p>
+        <button class="modal-feedbac__button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-feedbac__close" type="button">
+        <span>закрыть</span>
+      </button>
+    </section>
+  </body>
+</html>
