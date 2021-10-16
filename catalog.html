@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link">
+      <a class="page-header__logo-link" href="index.html">
         <img class="page-header__ligo-img" src="https://via.placeholder.com/159x65" width="159" height="65" alt="">
       </a>
       <nav class="page-header__nav main-nav">
@@ -39,7 +39,7 @@
 
       <section class="catalog-filter">
         <h2 class="catalog-filter__header">Фильтр каталога</h2>
-        <form class="catalog-filter__form filter-form" name="filter-form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="catalog-filter__form filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-form__price filter-price">
             <legend class="filter-price__title">Стоимость:</legend>
             <div class="filter-price__range-wrapper">
@@ -58,11 +58,158 @@
               </p>
             </div>
           </fieldset>
+          <fieldset class="filter-form__grid filter-grid">
+            <legend class="filter-grid__title">Сетка:</legend>
+            <p class="filter-grid__grid-wrapper">
+              <label for="adaptive-id">Адаптивная</label>
+              <input id="adaptive-id" type="radio" name="grid-name" value="adaptive" checked>
+            </p>
+            <p class="filter-grid__gird-wrapper">
+              <label for="fixed-id">Фиксированная</label>
+              <input id="fixed-id" type="radio" name="grid-name" value="fixed">
+            </p>
+            <p class="filter-grid__gird-wrapper">
+              <label for="rubber-id">Резиновая</label>
+              <input id="rubber-id" type="radio" name="grid-name" value="rubber">
+            </p>
+          </fieldset>
+          <fieldset class="filter-form__properties filter-properties">
+            <legend class="filter-properties__title">Особенности:</legend>
+            <p class="filter-properties__wrapper">
+              <label for="slider-name-id">Слайдер</label>
+              <input id="slider-name-id" type="checkbox" name="slider" checked>
+            </p>
+            <p class="filter-properties__wrapper">
+              <label for="advantages-name-id">Блок преимуществ</label>
+              <input id="advantages-name-id" type="checkbox" name="advantages">
+            </p>
+            <p class="filter-properties__wrapper">
+              <label for="news-name-id">Новости</label>
+              <input id="news-name-id" type="checkbox" name="news" checked>
+            </p>
+            <p class="filter-properties__wrapper">
+              <label for="gallery-name-id">Галерея</label>
+              <input id="gallery-name-id" type="checkbox" name="gallery">
+            </p>
+            <p class="filter-properties__wrapper">
+              <label for="basket-name-id">Корзина</label>
+              <input id="basket-name-id" type="checkbox" name="basket">
+            </p>
+          </fieldset>
+          <button class="filter-form__button" type="submit">Показать</button>
         </form>
       </section>
+
       <section class="catalog">
         <h2 class="catalog__header">Каталог товаров</h2>
-
+        <div class="catalog__sorting-wrapper">
+          <p class="catalog__sorting-title">Сортировать:</p>
+          <ul class="catalog__sorting-list sorting__list">
+            <li class="sorting__item">
+              <a href="#" class="sorting__link">По цене</a>
+            </li>
+            <li class="sorting__item">
+              <a href="#" class="sorting__link">По типу</a>
+            </li>
+            <li class="sorting__item">
+              <a href="#" class="sorting__link">По названию</a>
+            </li>
+            <li class="sorting__item">
+              <a href="#" class="sorting__link"><span>С начала списка</span></a>
+            </li>
+            <li class="sorting__item">
+              <a href="#" class="sorting__link"><span>С конца списка</span></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="catalog__product-list product__list">
+          <li class="product__item">
+            <a href="#" class="product__link">
+              <figure>
+                <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="">
+              </figure>
+            </a>
+            <div class="product__card-wrapper">
+              <h3 class="product__card-title"><a href="#">Sedona</a></h3>
+              <p class="product__card-text">Информационный сайт для туристов</p>
+              <button class="product__card-button" type="button">9 900 ₽</button>
+            </div>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link">
+              <figure>
+                <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="">
+              </figure>
+            </a>
+            <div class="product__card-wrapper">
+              <h3 class="product__card-title"><a href="#">Pink App</a></h3>
+              <p class="product__card-text">Продуктовый лендинг приложения для iOS и Android</p>
+              <button class="product__card-button" type="button">9 900 ₽</button>
+            </div>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link">
+              <figure>
+                <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="">
+              </figure>
+            </a>
+            <div class="product__card-wrapper">
+              <h3 class="product__card-title"><a href="#">Barbershop</a></h3>
+              <p class="product__card-text">Сайт салона красоты. Для мужчин, да.</p>
+              <button class="product__card-button" type="button">9 900 ₽</button>
+            </div>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link">
+              <figure>
+                <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="">
+              </figure>
+            </a>
+            <div class="product__card-wrapper">
+              <h3 class="product__card-title"><a href="#">Mishka</a></h3>
+              <p class="product__card-text">Интернет-магазин вязаных игрушек</p>
+              <button class="product__card-button" type="button">9 900 ₽</button>
+            </div>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link">
+              <figure>
+                <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="">
+              </figure>
+            </a>
+            <div class="product__card-wrapper">
+              <h3 class="product__card-title"><a href="#">A Plus</a></h3>
+              <p class="product__card-text">Лендинг курсов повышения квалификации</p>
+              <button class="product__card-button" type="button">9 900 ₽</button>
+            </div>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link">
+              <figure>
+                <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="">
+              </figure>
+            </a>
+            <div class="product__card-wrapper">
+              <h3 class="product__card-title"><a href="#">Квас</a></h3>
+              <p class="product__card-text">Промо-сайт производителя крафтового кваса</p>
+              <button class="product__card-button" type="button">9 900 ₽</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="catalog__pagination-list pagination__list">
+          <li class="pagination__item">
+            <a class="pagination-link">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination-link" href="#">Следующая</a>
+          </li>
+        </ul>
       </section>
     </main>
 
