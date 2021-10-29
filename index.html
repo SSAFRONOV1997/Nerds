@@ -3,225 +3,240 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нердс Дизайн студия</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicon/180.png">
     <link rel="manifest" href="nerds.webmanifest">
-    <title>Нердс Дизайн студия</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link">
-        <img class="page-header__ligo-img" src="images/nerds-logo.svg" width="159" height="65" alt="">
-      </a>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a>Студия</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="blank.html">Клиенты</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="blank.html">Контакты</a>
-          </li>
-        </ul>
+      <div class="wrapper">
+        <nav class="page-header__nav main-nav">
+          <a class="page-header__logo-link">
+            <img class="page-header__logo-img" src="images/nerds-logo.svg" width="159" height="65" alt="">
+          </a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">Студия</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="blank.html">Клиенты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Магазин</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
 
-        <ul class="user-nav__list">
-          <li class="user-nav__item">
-            <a class="user-nav__link" href="blank.html">Корзина</a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="blank.html">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__header">Дизайн-студия зи Краснодара</h1>
-
+      <h1 class="page-main__header visually-hidden">Дизайн-студия зи Краснодара</h1>
       <section class="intro">
-        <h2 class="intro__header">Слайдер</h2>
-        <div class="intro__wrapper slider">
-          <div class="intro__list slider__list">
-            <div class="intro__item slider__item">
-              <div class="intro__item-wrapper">
-                <p class="intro__title">Долго, дорого, скрупулезно.</p>
-                <p class="intro__text">математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                <a class="intro__link button" href="blank.html">Узнать больше</a>
+        <div class="wrapper">
+          <h2 class="intro__header visually-hidden">Слайдер</h2>
+          <div class="intro__wrapper slider">
+            <div class="intro__list slider__list">
+              <div class="intro__item slider__item">
+                <div class="intro__item-wrapper">
+                  <p class="intro__title header-color">Долго, дорого, скрупулезно.</p>
+                  <p class="intro__text">математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                  <a class="intro__link button" href="blank.html">Узнать больше</a>
+                </div>
+                <figure class="intro__image">
+                  <img class="intro__img" src="images/slide-one@1x.png" width="760" height="431" alt="">
+                </figure>
               </div>
-              <figure class="intro__image">
-                <img class="intro__img" src="images/slide-one@1x.png" width="760" height="431" alt="">
-              </figure>
-            </div>
-            <div class="intro__item slider__item">
-              <div class="intro__item-wrapper">
-                <p class="intro__title">Любим математику как никто другой</p>
-                <p class="intro__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                <a class="intro__link button" href="blank.html">Узнать больше</a>
+              <div class="intro__item slider__item">
+                <div class="intro__item-wrapper">
+                  <p class="intro__title header-color">Любим математику как никто другой</p>
+                  <p class="intro__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                  <a class="intro__link button" href="blank.html">Узнать больше</a>
+                </div>
+                <figure class="intro__image">
+                  <img class="intro__img" src="images/slide-two@1x.png" width="760" height="431" alt="">
+                </figure>
               </div>
-              <figure class="intro__image">
-                <img class="intro__img" src="images/slide-two@1x.png" width="760" height="431" alt="">
-              </figure>
-            </div>
-            <div class="intro__item slider__item">
-              <div class="intro__item-wrapper">
-                <p class="intro__title">Только ночь, только хардкор.</p>
-                <p class="intro__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <a class="intro__link button" href="blank.html">Узнать больше</a>
+              <div class="intro__item slider__item">
+                <div class="intro__item-wrapper">
+                  <p class="intro__title header-color">Только ночь, только хардкор.</p>
+                  <p class="intro__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                  <a class="intro__link button" href="blank.html">Узнать больше</a>
+                </div>
+                <figure class="intro__image">
+                  <img class="intro__img" src="images/slide-three@1x.png" width="760" height="431" alt="">
+                </figure>
               </div>
-              <figure class="intro__image">
-                <img class="intro__img" src="images/slide-three@1x.png" width="760" height="431" alt="">
-              </figure>
             </div>
-          </div>
-          <div class="intro__toggles slider__toggles">
-            <button class="intro__toggle slider__toggle" type="button">
-              <span class="">Первый слайд</span>
-            </button>
-            <button class="intro__toggle slider__toggle" type="button">
-              <span class="">Второй слайд</span>
-            </button>
-            <button class="intro__toggle slider__toggle" type="button">
-              <span class="">Третий слайд</span>
-            </button>
+            <div class="intro__toggles slider__toggles">
+              <button class="intro__toggle slider__toggle" type="button">
+                <span class="">Первый слайд</span>
+              </button>
+              <button class="intro__toggle slider__toggle" type="button">
+                <span class="">Второй слайд</span>
+              </button>
+              <button class="intro__toggle slider__toggle" type="button">
+                <span class="">Третий слайд</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
+      <div class="wrapper">
+        <section class="services">
+          <h2 class="services__header visually-hidden">Блок с услугами</h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <!-- <img src="images/service-img-one@1x.jpg" width="300" height="146" alt="">картинку перенести в стили -->
+              <h3 class="services__title header-color">Веб-сайты</h3>
+              <p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <button class="services__link button" type="button">Заказать</button>
+            </li>
+            <li class="services__item">
+              <!-- <img src="images/service-img-two@1x.jpg" width="300" height="146" alt=""> -->
+              <h3 class="services__title header-color">Приложения</h3>
+              <p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+              <button class="services__link services__link--mdfElmTwo button" type="button">Заказать</button>
+            </li>
+            <li class="services__item">
+              <!-- <img src="images/service-img-three@1x.jpg" width="300" height="146" alt=""> -->
+              <h3 class="services__title header-color">Презентации</h3>
+              <p class="services__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+              <button class="services__link services__link--mdfElmThree button" type="button">Заказать</button>
+            </li>
+          </ul>
+        </section>
 
-      <section class="services">
-        <h2 class="services__header">Блок с услугами</h2>
-        <ul class="services__list">
-          <li class="services__item">
-            <img src="images/service-img-one@1x.jpg" width="300" height="146" alt=""><!--картинку перенести в стили-->
-            <h3 class="services__title">Веб-сайты</h3>
-            <p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="services__link" href="blank.html">Заказать</a>
-          </li>
-          <li class="services__item">
-            <img src="images/service-img-two@1x.jpg" width="300" height="146" alt="">
-            <h3 class="services__title">Приложения</h3>
-            <p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="services__link" href="blank.html">Заказать</a>
-          </li>
-          <li class="services__item">
-            <img src="images/service-img-three@1x.jpg" width="300" height="146" alt="">
-            <h3 class="services__title">Презентации</h3>
-            <p class="services__text">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="services__link" href="blank.html">Заказать</a>
-          </li>
-        </ul>
-      </section>
+        <section class="about">
+          <h2 class="about__header visually-hidden">Блок о нас</h2>
+          <p class="about__title header-color">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="about__text"><b>Выполняем заказы на разработку:</b></p>
+          <ul class="about__list">
+            <li class="about__item">
+              <p class="about__item-text">Веб-сайтов любой сложности</p>
+            </li>
+            <li class="about__item">
+              <p class="about__item-text">Мобильных приложений для iOS и Android</p>
+            </li>
+            <li class="about__item">
+              <p class="about__item-text">Слайдшоу и видео для корпоративных презентаций</p>
+            </li>
+          </ul>
+        </section>
 
-      <section class="about">
-        <h2 class="about__header">Блок о нас</h2>
-        <p class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p class="about__text"><b>Выполняем заказы на разработку:</b></p>
-        <ul class="about__list">
-          <li class="about__item">
-            <p class="about__item-text">Веб-сайтов любой сложности</p>
-          </li>
-          <li class="about__item">
-            <p class="about__item-text">Мобильных приложений для iOS и Android</p>
-          </li>
-          <li class="about__item">
-            <p class="about__item-text">Слайдшоу и видео для корпоративных презентаций</p>
-          </li>
-        </ul>
-      </section>
+        <section class="advantages">
+          <h2 class="advantages__header visually-hidden">Блок с преимуществами</h2>
+          <figure class="advantages__images">
+            <img class="advantages__img" src="images/advantages-img@1x.jpg" width="360" height="208" alt=""><!--картинку перенести в стили-->
+          </figure>
+          <p class="advantages__slogan header-color"><b>с 2004 года Любим точность во всем:</b></p>
+          <dl class="advantages__list">
+            <div class="advantages__item">
+              <dt class="advantages__title">Уровень самоотдачи</dt>
+              <dd class="advantages__numbers">146<sup>%</sup></dd>
+            </div>
+            <div class="advantages__item">
+              <dt class="advantages__title">Соблюдение сроков</dt>
+              <dd class="advantages__numbers">100<sup>%</sup></dd>
+            </div>
+            <div class="advantages__item">
+              <dt class="advantages__title">Минимальная предоплата</dt>
+              <dd class="advantages__numbers">50<sup>%</sup></dd>
+            </div>
+          </dl>
+        </section>
 
-      <section class="advantages">
-        <h2 class="advantages__header">Блок с преимуществами</h2>
-        <figure class="advantages__images">
-          <img class="advantages__img" src="images/advantages-img@1x.jpg" width="360" height="208" alt=""><!--картинку перенести в стили-->
-        </figure>
-        <p class="advantages__slogon"><b>с 2004 года Любим точность во всем:</b></p>
-        <dl class="advantages__list">
-          <div class="advantages__item">
-            <dt class="advantages__title">Уровень самоотдачи</dt>
-            <dd class="advantages__numbers">146<sup>%</sup></dd>
-          </div>
-          <div class="advantages__item">
-            <dt class="advantages__title">Соблюдение сроков</dt>
-            <dd class="advantages__numbers">100<sup>%</sup></dd>
-          </div>
-          <div class="advantages__item">
-            <dt class="advantages__title">Минимальная предоплата</dt>
-            <dd class="advantages__numbers">50<sup>%</sup></dd>
-          </div>
-        </dl>
-      </section>
-
-      <section class="customers">
-        <h2 class="customers__header">Блок с клиентами</h2>
-        <ul class="customers__list">
-          <li class="customers__item">
-            <img src="images/htmlacademy@1x.png" width="199" height="57" alt="">
-          </li>
-          <li class="customers__item">
-            <img src="images/borodinski@1x.png" width="209" height="90" alt="">
-          </li>
-          <li class="customers__item">
-            <img src="images/pink@1x.png" width="185" height="52" alt="">
-          </li>
-          <li class="customers__item">
-            <img src="images/mishka@1x.png" width="173" height="84" alt="">
-          </li>
-        </ul>
-      </section>
-
+        <section class="customers">
+          <h2 class="customers__header visually-hidden">Блок с клиентами</h2>
+          <ul class="customers__list">
+            <li class="customers__item">
+              <a class="customers__link" href="blank.html">
+                <img src="images/htmlacademy@1x.png" width="199" height="57" alt="">
+              </a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="blank.html">
+                <img src="images/borodinski@1x.png" width="209" height="90" alt="">
+              </a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="blank.html">
+                <img src="images/pink@1x.png" width="185" height="52" alt="">
+              </a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="blank.html">
+                <img src="images/mishka@1x.png" width="173" height="84" alt="">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
       <section class="contacts">
-        <h2 class="contacts__header">Мы ждем вас</h2>
+        <h2 class="contacts__header visually-hidden">Мы ждем вас</h2>
         <div class="contacts__wrapper">
-          <h3 class="contacts__title">Nёrds design studio</h3>
-          <p class="contacts__addres">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <h3 class="contacts__title header-color">Nёrds design studio</h3>
+          <p class="contacts__addres">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
           <a class="contacts__tel" href="tel:+78005558628">+7 800 555-86-28</a>
-          <a class="contacts__link" href="blank.html">Напишите нам</a>
+          <a class="contacts__link button" href="blank.html">Напишите нам</a>
         </div>
         <figure class="contacts__list maps">
           <img class="maps__img-map" src="images/map@1x.jpg" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
           <iframe class="maps__activ-map" style="display: none;"></iframe>
         </figure>
       </section>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="blank.html" class="social__link" target="_blank">
-              <svg role="img" focusable="false" width="27" height="15" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419Z"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="blank.html" class="social__link" target="_blank">
-              <svg role="img" focusable="false" width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4Z"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="blank.html" class="social__link" target="_blank">
-              <svg role="img" focusable="false" width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3Zm11 10.5C14 8.57 12.43 7 10.5 7S7 8.57 7 10.5 8.57 14 10.5 14s3.5-1.57 3.5-3.5ZM3 18V9h1.181c-.118.491-.18.995-.181 1.5a6.5 6.5 0 1 0 13 0 6.451 6.451 0 0 0-.181-1.5H18v9H3ZM14 7h4V3h-4v4Z"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__text-wrapper">
-        <p class="footer__slogon">Давайте дружить, это выгодно!</p>
-        <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="wrapper">
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="blank.html" target="_blank">
+                <svg role="img" focusable="false" width="27" height="15" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419Z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="blank.html" target="_blank">
+                <svg role="img" focusable="false" width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4Z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="blank.html" target="_blank">
+                <svg role="img" focusable="false" width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3Zm11 10.5C14 8.57 12.43 7 10.5 7S7 8.57 7 10.5 8.57 14 10.5 14s3.5-1.57 3.5-3.5ZM3 18V9h1.181c-.118.491-.18.995-.181 1.5a6.5 6.5 0 1 0 13 0 6.451 6.451 0 0 0-.181-1.5H18v9H3ZM14 7h4V3h-4v4Z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__text-wrapper">
+          <p class="footer__slogan header-color">Давайте дружить, это выгодно!</p>
+          <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
 
     <section class="modal-feedback">
-      <h2 class="modal-feedbac__header">Напишите нам</h2>
-      <form class="modal-feedbac__form" action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="modal-feedback__header header-color">Напишите нам</h2>
+      <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="post">
         <p class="modal-feedback__wrapper">
           <label for="user-name-id">Ваше имя:</label>
           <input id="user-name-id" type="text" name="user-name" placeholder="Имя Фамилия">
@@ -234,13 +249,13 @@
           <label for="free-form-id">Текст письма:</label>
           <textarea id="free-form-id" name="free-form" cols="30" rows="10">В свободной форме</textarea>
         </p>
-        <button class="modal-feedbac__button" type="submit">Отправить</button>
+        <button class="modal-feedback__button button" type="submit">Отправить</button>
       </form>
-      <button class="modal-feedbac__close" type="button">
+      <button class="modal-feedback__close" type="button">
         <svg role="presentation" aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
           <path d="m13.34 10.509 7.376-7.377c.39-.39.39-1.026 0-1.416L19.301.3a1.003 1.003 0 0 0-1.415 0l-7.377 7.378L3.132.301a1.003 1.003 0 0 0-1.416 0L.301 1.716c-.39.39-.39 1.026 0 1.416l7.377 7.377-7.377 7.377c-.39.39-.39 1.026 0 1.415l1.416 1.415c.39.39 1.026.39 1.416 0l7.377-7.377 7.377 7.377c.39.39 1.026.39 1.415 0l1.415-1.415c.39-.39.39-1.026 0-1.415l-7.378-7.377Z"/>
         </svg>
-        <span>закрыть</span>
+        <span class="visually-hidden">закрыть</span>
       </button>
     </section>
   </body>

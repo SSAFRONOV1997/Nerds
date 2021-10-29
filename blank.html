@@ -3,52 +3,58 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <title>404</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__ligo-img" src="images/nerds-logo.svg" width="159" height="65" alt="">
-      </a>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">Студия</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Клиенты</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
+      <div class="wrapper">
+        <nav class="page-header__nav main-nav">
+          <a class="page-header__logo-link" href="index.html">
+            <img class="page-header__ligo-img" src="images/nerds-logo.svg" width="159" height="65" alt="">
+          </a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Студия</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Клиенты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Магазин</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
 
-        <ul class="user-nav__list">
-          <li class="user-nav__item">
-            <a class="user-nav__link" href="#">Корзина</a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h1>404</h1>
-      <p>Что то пошло не так</p>
+    <main class="page-blank">
+      <div class="wrapper">
+        <h1 class="blank__header header-color">404</h1>
+        <p class="blank__text">Что то пошло не так</p>
+      </div>
     </main>
     <footer class="page-footer">
       <section class="contacts">
-        <h2 class="contacts__header">Мы ждем вас</h2>
+        <h2 class="contacts__header visually-hidden">Мы ждем вас</h2>
         <div class="contacts__wrapper">
-          <h3 class="contacts__title">Nёrds design studio</h3>
+          <h3 class="contacts__title header-color">Nёrds design studio</h3>
           <p class="contacts__addres">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
           <a class="contacts__tel" href="tel:+78005558628">+7 800 555-86-28</a>
-          <a class="contacts__link" href="#">Напишите нам</a>
+          <a class="contacts__link button" href="#">Напишите нам</a>
         </div>
       </section>
       <div class="social">
@@ -77,7 +83,7 @@
         </ul>
       </div>
       <div class="footer__text-wrapper">
-        <p class="footer__slogon">Давайте дружить, это выгодно!</p>
+        <p class="footer__slogan header-color">Давайте дружить, это выгодно!</p>
         <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
