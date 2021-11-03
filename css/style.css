@@ -430,7 +430,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 280px; */
   height: 100px;
 }
 
@@ -454,19 +453,23 @@ img {
 
 /*catalog*/
 
-.catalog-title {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  color: var(--basic-black);
-  text-transform: uppercase;
+.catalog-column {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
 }
 
 .wrapper-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
   background-color: var(--basic-grey--150);
 }
 
-.catalog-main__header {
+.page-catalog__header {
+  max-width: 60%;
+  margin: 0;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -475,8 +478,41 @@ img {
 
 /*catalog-filter*/
 
+.catalog-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.filter-form__price,
+.filter-form__grid,
+.filter-form__properties {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.catalog-filter {
+  grid-column: 1 / 2;
+}
+
+.filter-form__price {
+  margin-bottom: 54px;
+}
+
+.filter-form__title {
+  margin-bottom: 48px;
+}
+
+
 .filter-price__range-wrapper {
   background-color: var(--basic-grey--150);
+}
+
+.filter-price__number {
+  margin: 0;
 }
 
 .filter-price__number label {
@@ -489,9 +525,35 @@ img {
   border: none;
 }
 
+.filter-form__grid {
+  margin-bottom: 47px;
+}
+
+.filter-grid__title {
+  margin-bottom: 16px;
+}
+
+.filter-grid__grid-wrapper {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
 .filter-grid__grid-wrapper label,
 .filter-properties__wrapper label {
   line-height: 20px;
+}
+
+.filter-form__properties {
+  margin-bottom: 50px;
+}
+
+.filter-properties__title {
+  margin-bottom: 16px;
+}
+
+.filter-properties__wrapper {
+  margin: 0;
+  margin-bottom: 19px;
 }
 
 .filter-form__button {
@@ -509,9 +571,24 @@ img {
   background-color: var(--basic-grey--450);
 }
 
+/*catalog*/
+
+.catalog {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-column: 2 / 4;
+  margin-left: 140px;
+}
+
 /*catalog__sorting*/
 
+.catalog__sorting-title {
+  margin: 0;
+}
+
 .catalog__sorting-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -564,6 +641,8 @@ img {
 /*catalog__product-list*/
 
 .catalog__product-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -584,11 +663,25 @@ img {
 }
 
 .product__card-wrapper {
+  padding-top: 25px;
+  padding-bottom: 40px;
   text-align: center;
   background-color: var(--basic-grey--100);
 }
 
+.product__images {
+  margin: 0;
+  padding: 0;
+}
+
+.product__img {
+  display: block;
+  object-fit: cover;
+}
+
 .product__card-title {
+  margin: 0;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -610,6 +703,8 @@ img {
 }
 
 .product__card-text {
+  margin: 0;
+  margin-bottom: 33px;
   line-height: 18px;
   color: var(--basic-dark--100);
 }
@@ -621,6 +716,8 @@ img {
 /*catalog__pagination-list*/
 
 .catalog__pagination-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -650,6 +747,10 @@ img {
 
 /*blank*/
 
+.page-blank {
+  background-color: var(--basic-black);
+}
+
 .blank__header {
   margin: 0;
   font-size: 400px;
@@ -658,17 +759,38 @@ img {
   text-align: center;
 }
 
+.blank__text--green {
+  color: var(--basic-green);
+}
+
+.blank__text--yellow {
+  color: var(--basic-yellow);
+}
+
+.blank__text--red {
+  color: var(--basic-red);
+}
+
 .blank__text {
   margin: 0;
   font-size: 100px;
   line-height: 100px;
   font-weight: 700;
   text-align: center;
+  color: var(--basic-white);
 }
 
 /*footer*/
 
+.page-footer {
+  padding-bottom: 75px;
+}
+
 /*contacts*/
+
+.contacts {
+  margin-bottom: 65px;
+}
 
 .contacts__wrapper {
   display: grid;
@@ -728,7 +850,9 @@ img {
   grid-column: 1 / 2;
 }
 
-.social__item {
+.social__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -758,12 +882,15 @@ img {
 }
 
 .footer__slogan {
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
 }
 
 .footer__text {
+  margin: 0;
   line-height: 22px;
   color: var(--basic-dark--200);
 }
