@@ -52,12 +52,12 @@
           <form class="catalog-filter__form filter-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-form__price filter-price">
               <legend class="filter-form__title catalog-title">Стоимость:</legend>
-              <div class="filter-price__range-wrapper">
-                <div class="filter-price__ranger"></div>
-                <span class="filter-price__control filter-price__control--left"></span>
-                <span class="filter-price__control filter-price__control--right"></span>
-              </div>
-              <div class="filter-price__number-wrapper">
+              <div class="filter-price__column">
+                <div class="filter-price__range-wrapper">
+                  <div class="filter-price__ranger"></div>
+                  <span class="filter-price__control filter-price__control--left"></span>
+                  <span class="filter-price__control filter-price__control--right"></span>
+                </div>
                 <p class="filter-price__number">
                   <label for="number-before-id">От</label>
                   <input id="number-before-id" type="number" name="number-before" value="0" readonly>
@@ -121,10 +121,10 @@
               <li class="sorting__item">
                 <a class="sorting__link" href="#">По типу</a>
               </li>
-              <li class="sorting__item">
+              <li class="sorting__item sorting__item--mdfThree">
                 <a class="sorting__link" href="#">По названию</a>
               </li>
-              <li class="sorting__item">
+              <li class="sorting__item sorting__item--mdfFour">
                 <a class="sorting__link-triangle" href="#">
                   <svg class="sorting__triangle sorting__triangle--current sorting__triangle--up" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10 0 0h11"/>
@@ -143,7 +143,7 @@
             </ul>
           </div>
           <ul class="catalog__product-list product__list">
-            <li class="product__item">
+            <li class="product__item" tabindex="0">
               <div class="product__item-wrapper">
                 <figure class="product__images">
                   <img class="product__img" src="files/maket-sedona@1x.png" width="358" height="578" alt="">
@@ -155,7 +155,7 @@
                 </div>
               </div>
             </li>
-            <li class="product__item">
+            <li class="product__item" tabindex="0">
               <div class="product__item-wrapper">
                 <figure class="product__images">
                   <img class="product__img" src="files/maket-pink@1x.png" width="358" height="578" alt="">
@@ -167,49 +167,49 @@
                 </div>
               </div>
             </li>
-            <li class="product__item">
+            <li class="product__item" tabindex="0">
               <div class="product__item-wrapper">
                 <figure class="product__images">
                   <img class="product__img" src="files/maket-borodinski@1x.png" width="358" height="578" alt="">
                 </figure>
                 <div class="product__card-wrapper">
-                  <h3 class="product__card-title"><a href="#">Barbershop</a></h3>
+                  <h3 class="product__card-title header-color"><a href="#">Barbershop</a></h3>
                   <p class="product__card-text">Сайт салона красоты. Для мужчин, да.</p>
                   <button class="product__card-button button" type="button">9 900 ₽</button>
                 </div>
               </div>
             </li>
-            <li class="product__item">
+            <li class="product__item" tabindex="0">
               <div class="product__item-wrapper">
                 <figure class="product__images">
                   <img class="product__img" src="files/maket-mishka@1x.png" width="358" height="578" alt="">
                 </figure>
                 <div class="product__card-wrapper">
-                  <h3 class="product__card-title"><a href="#">Mishka</a></h3>
+                  <h3 class="product__card-title header-color"><a href="#">Mishka</a></h3>
                   <p class="product__card-text">Интернет-магазин вязаных игрушек</p>
                   <button class="product__card-button button" type="button">9 900 ₽</button>
                 </div>
               </div>
             </li>
-            <li class="product__item">
+            <li class="product__item" tabindex="0">
               <div class="product__item-wrapper">
                 <figure class="product__images">
                   <img class="product__img" src="files/maket-aplus@1x.png" width="358" height="578" alt="">
                 </figure>
                 <div class="product__card-wrapper">
-                  <h3 class="product__card-title"><a href="#">A Plus</a></h3>
+                  <h3 class="product__card-title header-color"><a href="#">A Plus</a></h3>
                   <p class="product__card-text">Лендинг курсов повышения квалификации</p>
                   <button class="product__card-button button" type="button">9 900 ₽</button>
                 </div>
               </div>
             </li>
-            <li class="product__item">
+            <li class="product__item" tabindex="0">
               <div class="product__item-wrapper">
                 <figure class="product__images">
                   <img class="product__img" src="files/maket-kvass@1x.png" width="358" height="578" alt="">
                 </figure>
                 <div class="product__card-wrapper">
-                  <h3 class="product__card-title"><a href="#">Квас</a></h3>
+                  <h3 class="product__card-title header-color"><a href="#">Квас</a></h3>
                   <p class="product__card-text">Промо-сайт производителя крафтового кваса</p>
                   <button class="product__card-button button" type="button">9 900 ₽</button>
                 </div>
@@ -239,14 +239,14 @@
         <h2 class="contacts__header visually-hidden">Мы ждем вас</h2>
         <div class="contacts__wrapper">
           <h3 class="contacts__title header-color">Nёrds design studio</h3>
-          <p class="contacts__addres">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <p class="contacts__address">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
           <a class="contacts__tel" href="tel:+78005558628">+7 800 555-86-28</a>
           <a class="contacts__link button" href="blank.html">Напишите нам</a>
         </div>
-        <figure class="contacts__list maps">
-          <img class="maps__img-map" src="images/map@1x.jpg" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
-          <iframe class="maps__activ-map" style="display: none;"></iframe>
-        </figure>
+        <div class="contacts__map-wrapper">
+          <iframe class="maps__active-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7987.290429285352!2d30.3174089!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1636065318079!5m2!1sru!2sru" width="100%" height="416" style="border:0;"  loading="lazy"></iframe>
+        </div>
+      </section>
       </section>
       <div class="footer__column wrapper">
         <div class="social">
