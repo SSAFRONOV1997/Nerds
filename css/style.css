@@ -825,6 +825,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr minmax(231px, auto);
+  min-height: 580px;
   background-color: var(--basic-grey--100);
   border: 1px solid var(--alpha-black--150);
   box-sizing: border-box;
@@ -854,10 +855,11 @@ img {
 .product__card-wrapper {
   display: grid;
   grid-template: min-content 1fr min-content / 1fr;
+  grid-auto-flow: row;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   min-height: 231px;
-  padding: 25px 20px 44px 20px;
+  padding: 25px 25px 44px 25px;
   text-align: center;
   background-color: var(--basic-grey--100);
   box-sizing: border-box;
