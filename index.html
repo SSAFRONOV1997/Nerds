@@ -20,7 +20,7 @@
           </a>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current">Студия</a>
+              <a class="main-nav__link current-nav">Студия</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="blank.html">Клиенты</a>
@@ -193,7 +193,7 @@
           <a class="contacts__link button" href="blank.html">Напишите нам</a>
         </div>
         <div class="contacts__map-wrapper">
-          <iframe class="maps__active-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7987.290429285352!2d30.3174089!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1636065318079!5m2!1sru!2sru" width="100%" height="416" style="border:0;"  loading="lazy"></iframe>
+          <iframe class="maps__active-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7987.290429285352!2d30.3174089!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1636065318079!5m2!1sru!2sru" style="border: 0; width: 100%; height: 416px;" loading="lazy"></iframe>
         </div>
       </section>
       <div class="footer__column wrapper">
@@ -234,15 +234,15 @@
       <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="post">
         <p class="modal-feedback__wrapper">
           <label for="user-name-id">Ваше имя:</label>
-          <input id="user-name-id" type="text" name="user-name" placeholder="Имя Фамилия">
+          <input id="user-name-id" class="modal-feedback__item" type="text" name="user-name" placeholder="Имя Фамилия">
         </p>
         <p class="modal-feedback__wrapper">
           <label for="user-email-id">Ваш email:</label>
-          <input id="user-email-id" type="email" name="user-email" placeholder="email@example.com ">
+          <input id="user-email-id" class="modal-feedback__item" type="email" name="user-email" placeholder="email@example.com ">
         </p>
         <p class="modal-feedback__wrapper">
           <label for="free-form-id">Текст письма:</label>
-          <textarea id="free-form-id" name="free-form" cols="30" rows="10">В свободной форме</textarea>
+          <textarea id="free-form-id" class="modal-feedback__item modal-feedback__item--textarea" name="free-form" cols="30" rows="10">В свободной форме</textarea>
         </p>
         <button class="modal-feedback__button button" type="submit">Отправить</button>
       </form>
