@@ -1104,6 +1104,7 @@ img {
   background-color: var(--basic-grey--100);
   z-index: 1;
   box-sizing: border-box;
+  visibility: hidden;
 }
 
 .product__card-title {
@@ -1144,13 +1145,9 @@ img {
   color: var(--basic-white);
 }
 
-.product__card-wrapper {
-  display: none;
-}
-
 .product__item:hover .product__card-wrapper,
-.product__item:focus .product__card-wrapper {
-  display: grid;
+.product__item:focus-within .product__card-wrapper {
+  visibility: visible;
 }
 
 /*catalog__pagination-list*/
@@ -1176,22 +1173,29 @@ img {
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--basic-black);
-  background-color: var(--basic-grey--150);
   border-radius: 3px;
   box-sizing: border-box;
 }
 
-.pagination-link--button {
+.pagination-link,
+.pagination-button {
+  color: var(--basic-black);
+  background-color: var(--basic-grey--150);
+}
+
+.pagination-button {
   width: 260px;
 }
 
 .pagination-link:hover,
-.pagination-link:focus {
+.pagination-link:focus,
+.pagination-button:hover,
+.pagination-button:focus {
   background-color: var(--basic-grey--200);
 }
 
-.pagination-link:active {
+.pagination-link:active,
+.pagination-button:active {
   color: var(--alpha-black--300);
   background-color: var(--basic-grey--450);
   box-shadow: inset 0 3px 0  var(--alpha-black--100);
